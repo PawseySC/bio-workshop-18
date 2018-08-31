@@ -1,0 +1,8 @@
+fastqc
+trimmomatic
+bowtie2
+samtools
+bedtools
+velvet
+mummer3
+bcftools
