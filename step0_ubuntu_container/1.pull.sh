@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # this is not required for pulling
-# docker login -u 'user' -p 'password' quay.io
+# docker login -u 'user' -p 'password'
 
 ubuntu_cont=ubuntu
 
