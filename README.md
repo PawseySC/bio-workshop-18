@@ -3,6 +3,6 @@
 Hands-on Workshop 7th September 2018
 Session on Containers for Bioinformatics
 
-[Event page](www.pawsey.org.au/bio-symposium)
+[Event page](https://www.pawsey.org.au/bio-symposium)
 
-[GitHub]()
+[GitHub](https://github.com/PawseySC/bio-workshop-18)
