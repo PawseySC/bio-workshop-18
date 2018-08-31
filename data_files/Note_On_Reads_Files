@@ -1,6 +1,6 @@
 SRR6166481_10k_1.fastq and SRR6166481_10k_2.fastq are the first 10,000 reads stripped out
-of the original read files with about 2 millions reads, 
-
+of the original read files with about 2 millions reads (Fagopyrum tartaricum), 
 taken from https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6166481
 
-Organism: Fagopyrum tartaricum
+Reference genome files Drosera_rotundifolia.fasta and Fagopyrum_esculentum.fasta 
+come from GenBank
