@@ -1,15 +1,15 @@
 # 1. Quality control - FastQC
-cp -p ../data_files/SRR6166481_10k_[12].fastq .
+cp -p ../data_files/SRR6166481_sub_[12].fastq .
 #
-fastqc -o . SRR6166481_10k_1.fastq.gz
-fastqc -o . SRR6166481_10k_2.fastq.gz
+fastqc -o . SRR6166481_sub_1.fastq.gz
+fastqc -o . SRR6166481_sub_2.fastq.gz
 
 
 # 2. Cleaning - Trimmomatic
 java -jar /mnt/s-ws/everyone/Trimmomatic-0.36/trimmomatic-0.36.jar \
-	PE SRR6166481_10k_1.fastq.gz SRR6166481_10k_2.fastq.gz \
-	SRR6166481_10k_1_paired.fastq.gz SRR6166481_10k_1_unpaired.fastq.gz \
-	SRR6166481_10k_2_paired.fastq.gz SRR6166481_10k_2_unpaired.fastq.gz \
+	PE SRR6166481_sub_1.fastq.gz SRR6166481_sub_2.fastq.gz \
+	SRR6166481_sub_1_paired.fastq.gz SRR6166481_sub_1_unpaired.fastq.gz \
+	SRR6166481_sub_2_paired.fastq.gz SRR6166481_sub_2_unpaired.fastq.gz \
 	ILLUMINACLIP:/mnt/s-ws/everyone/Trimmomatic-0.36/adapters/all.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
 
@@ -17,20 +17,20 @@ java -jar /mnt/s-ws/everyone/Trimmomatic-0.36/trimmomatic-0.36.jar \
 cp -p ../data_files/Fagopyrum_esculentum.fasta .
 #
 bowtie2-build Fagopyrum_esculentum.fasta FagoEsc_ref
-bowtie2 -k 5 -x FagoEsc_ref -1 SRR6166481_10k_1_paired.fastq.gz -2 SRR6166481_10k_2_paired.fastq.gz -S SRR6166481_10k.sam --al-conc-gz SRR6166481_10k_hitting.fastq.gz
+bowtie2 -k 5 -x FagoEsc_ref -1 SRR6166481_sub_1_paired.fastq.gz -2 SRR6166481_sub_2_paired.fastq.gz -S SRR6166481_sub.sam --al-conc-gz SRR6166481_sub_hitting.fastq.gz
 # Compress to bam file
-samtools view -bS SRR6166481_10k.sam >SRR6166481_10k.bam
+samtools view -bS SRR6166481_sub.sam >SRR6166481_sub.bam
 
 
 # 4. Assembly - Velvet
-velveth out_velvet 29 -shortPaired -fastq.gz -separate SRR6166481_10k_hitting.fastq.1.gz SRR6166481_10k_hitting.fastq.2.gz
+velveth out_velvet 29 -shortPaired -fastq.gz -separate SRR6166481_sub_hitting.fastq.1.gz SRR6166481_sub_hitting.fastq.2.gz
 velvetg out_velvet -exp_cov 100 -min_contig_lgth 2000 -ins_length 300 -cov_cutoff 50 -clean yes
-cp -p out_velvet/contigs.fa SRR6166481_10k_contigs.fa
+cp -p out_velvet/contigs.fa SRR6166481_sub_contigs.fa
 
 
 # 5. Alignment with references - Mummer
-run-mummer3 Fagopyrum_esculentum.fasta SRR6166481_10k_contigs.fa SRR6166481_10k_mummer
-mummerplot -png -p mummer SRR6166481_10k_mummer.out   # plotting
+run-mummer3 Fagopyrum_esculentum.fasta SRR6166481_sub_contigs.fa SRR6166481_sub_mummer
+mummerplot -png -p mummer SRR6166481_sub_mummer.out   # plotting
 
 
 # 6. SNP Calling - Samtools + Bcftools
