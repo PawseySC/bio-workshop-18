@@ -23,7 +23,7 @@ samtools view -bS SRR6166481_sub.sam >SRR6166481_sub.bam
 
 
 # 4. Assembly - Velvet
-velveth out_velvet 29 -shortPaired -fastq.gz -separate SRR6166481_sub_hitting.fastq.1.gz SRR6166481_sub_hitting.fastq.2.gz
+velveth out_velvet 29 -shortPaired -fastq.gz -separate SRR6166481_sub_1_paired.fastq.gz SRR6166481_sub_2_paired.fastq.gz
 velvetg out_velvet -exp_cov 100 -min_contig_lgth 2000 -ins_length 300 -cov_cutoff 50 -clean yes
 cp -p out_velvet/contigs.fa SRR6166481_sub_contigs.fa
 
