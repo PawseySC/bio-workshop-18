@@ -3,7 +3,5 @@ step*/SRR6166481_10k_*
 step*/solutions/SRR6166481_*
 step*/Fago*
 step*/solutions/Fago*
-step*/contigs.fa
-step*/solutions/contigs.fa
-step*/velvet
-step*/solutions/velvet
+step*/out_velvet
+step*/solutions/out_velvet

@@ -23,13 +23,14 @@ samtools view -bS SRR6166481_10k.sam >SRR6166481_10k.bam
 
 
 # 4. Assembly - Velvet
-velveth . 29 -shortPaired -fastq.gz -separate SRR6166481_10k_hitting.fastq.1.gz SRR6166481_10k_hitting.fastq.2.gz
-velvetg . -exp_cov 100 -min_contig_lgth 2000 -ins_length 300 -cov_cutoff 50 -clean yes
+velveth out_velvet 29 -shortPaired -fastq.gz -separate SRR6166481_10k_hitting.fastq.1.gz SRR6166481_10k_hitting.fastq.2.gz
+velvetg out_velvet -exp_cov 100 -min_contig_lgth 2000 -ins_length 300 -cov_cutoff 50 -clean yes
+cp -p out_velvet/contigs.fa SRR6166481_10k_contigs.fa
 
 
 # 5. Alignment with references - Mummer
-run-mummer3 Fagopyrum_esculentum.fasta your_assembly OUTPUT # bug in nummer script
-mummerplot -png -p mummer OUTPUT.out   # plotting
+run-mummer3 Fagopyrum_esculentum.fasta SRR6166481_10k_contigs.fa SRR6166481_10k_mummer
+mummerplot -png -p mummer SRR6166481_10k_mummer.out   # plotting
 
 
 # 6. SNP Calling - Samtools + Bcftools
