@@ -1,6 +1,5 @@
 # 1. Quality control - FastQC
-cp -p ../data_files/SRR6166481_10k_1.fastq .
-cp -p ../data_files/SRR6166481_10k_2.fastq .
+cp -p ../data_files/SRR6166481_10k_[12].fastq .
 #
 fastqc -o . SRR6166481_10k_1.fastq.gz
 fastqc -o . SRR6166481_10k_2.fastq.gz
@@ -23,30 +22,17 @@ bowtie2 -k 5 -x FagoEsc_ref -1 SRR6166481_10k_1_paired.fastq.gz -2 SRR6166481_10
 samtools view -bS SRR6166481_10k.sam >SRR6166481_10k.bam
 
 
-# 4. Analyses - Bedtools
-cp -p ../data_files/Fagopyrum_esculentum.gff3 .
-# Check which genes are covered by reads - bedtools
-bedtools intersect -a Fagopyrum_esculentum.gff3 -b SRR6166481_10k.bam -wao
-# Check whether any reads don't align to our given genes - bedtools
-bedtools genomecov -ibam SRR6166481_10k.bam -bga | head
-# Get all genes that have parts with no reads aligning by comparing with the annotation gff3 - bedtools
-bedtools genomecov -ibam SRR6166481_10k.bam -bga | awk '$4 == 0' | bedtools intersect -a Fagopyrum_esculentum.gff3 -b - -loj -f 1 | less
-bedtools genomecov -ibam SRR6166481_10k.bam -bga | awk '$4 == 0' | bedtools intersect -a Fagopyrum_esculentum.gff3 -b - -loj -f 1 | grep -v "\-1"
-bedtools genomecov -ibam SRR6166481_10k.bam -bga | awk '$4 == 0' | bedtools intersect -a Fagopyrum_esculentum.gff3 -b - -loj -f 0.7 | grep -v "\-1" | grep gene | cut -f 4 | sort | uniq
-bedtools genomecov -ibam SRR6166481_10k.bam -bga | awk '$4 == 0' | bedtools intersect -a Fagopyrum_esculentum.gff3 -b - -loj -f 0.5 | grep -v "\-1" | grep gene | cut -f 4 | sort | uniq
-
-
-# 5. Assembly - Velvet
+# 4. Assembly - Velvet
 velveth . 29 -shortPaired -fastq.gz -separate SRR6166481_10k_hitting.1.fastq SRR6166481_10k_hitting.2.fastq
 velvetg . -exp_cov 100 -min_contig_lgth 2000 -ins_length 300 -cov_cutoff 50 -clean yes
 
 
-# 6. Alignment with references - Mummer
+# 5. Alignment with references - Mummer
 run-mummer3 Fagopyrum_esculentum.fasta your_assembly OUTPUT # bug in nummer script
 mummerplot -png -p mummer OUTPUT.out   # plotting
 
 
-# 7. SNP Calling - Samtools + Bcftools
+# 6. SNP Calling - Samtools + Bcftools
 # Sorting BAM file
 samtools sort All_output.bam All_output_sorted
 # Indexing
@@ -54,4 +40,3 @@ samtools index All_output_sorted.bam
 # SNP calling
 samtools mpileup -uf YOUR_REFERENCE.fasta All_output_sorted.bam | bcftools view -bvcg - > var.raw.bcf  
 bcftools view var.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > var.flt.vcf  
-
