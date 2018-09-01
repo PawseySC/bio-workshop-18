@@ -4,5 +4,5 @@ quay.io/biocontainers/bowtie2:2.3.4.2--py27h2d50403_0
 quay.io/biocontainers/samtools:1.9--h46bd0b3_0
 quay.io/biocontainers/bedtools:2.23.0--he941832_1
 quay.io/biocontainers/velvet:1.2.10--1
-quay.io/biocontainers/mummer:3.23--pl526_6
+biocontainers/mummer:v3.23dfsg-2-deb_cv1
 quay.io/biocontainers/bcftools:1.9--h4da6232_0
