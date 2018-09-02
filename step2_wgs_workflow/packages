@@ -3,5 +3,5 @@ trimmomatic
 bowtie2
 samtools
 velvet
-mummer3
+mummer4
 bcftools
