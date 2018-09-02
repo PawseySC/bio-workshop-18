@@ -1,4 +1,4 @@
-##GitHub Repo for the Pawsey COMBINE Bioinformatics Symposium 2018
+## GitHub Repo for the Pawsey COMBINE Bioinformatics Symposium 2018
 
 Hands-on Workshop 7th September 2018
 Session on Containers for Bioinformatics
