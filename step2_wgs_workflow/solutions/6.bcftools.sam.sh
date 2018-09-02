@@ -1,17 +1,15 @@
 #!/bin/bash
 
 samtools_cont=quay.io/biocontainers/samtools:1.9--h46bd0b3_0
-bcftools_cont=quay.io/biocontainers/bcftools:1.9--h4da6232_0
+bcftools_cont=biocontainers/bcftools:v1.3.1-1b1-deb_cv1
 run_flags="--rm -v $(pwd):/data -w /data"
 
-#docker run $run_flags $samtools_cont samtools sort -o SRR6166481_sub_sorted.bam SRR6166481_sub.bam
+docker run $run_flags $samtools_cont samtools sort -o SRR6166481_sub_sorted.bam SRR6166481_sub.bam
 
-#docker run $run_flags $samtools_cont samtools index SRR6166481_sub_sorted.bam
+docker run $run_flags $samtools_cont samtools index SRR6166481_sub_sorted.bam
 
-#docker run $run_flags 
+docker run    $run_flags $samtools_cont samtools mpileup -uf Fagopyrum_esculentum.fasta SRR6166481_sub_sorted.bam | \
+docker run -i $run_flags $bcftools_cont bcftools call -o SRR6166481_sub_var_raw.bcf -Ob -v -c -
 
-
-
-# samtools mpileup -uf YOUR_REFERENCE.fasta All_output_sorted.bam | bcftools view -bvcg - > var.raw.bcf
-# bcftools view var.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > var.flt.vcf
-
+docker run    $run_flags $bcftools_cont bcftools view SRR6166481_sub_var_raw.bcf | \
+docker run -i $run_flags $bcftools_cont vcfutils.pl varFilter -D 100 >SRR6166481_sub_var_flt.vcf
