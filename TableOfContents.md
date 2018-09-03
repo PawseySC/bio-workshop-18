@@ -1,6 +1,6 @@
 ## Containers for bioinformatics
 
-[GitHub Home](https://github.com/PawseySC/bio-workshop-18)
+[Workshop Home](https://github.com/PawseySC/bio-workshop-18)
 
 ### Table of Contents
 1. [Docker, repos, containers](https://github.com/PawseySC/bio-workshop-18/blob/master/1.containers.md)
