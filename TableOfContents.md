@@ -12,5 +12,5 @@
 ### Requirements
 - A computer with a Unix-like terminal and [Docker](https://www.docker.com) installed; 
 creation of a free account might be required to Download Docker.
-- To test the scripts in episode 4 (HPC porting), 
+- To test the scripts in Episode 4 (HPC porting), 
 access is required to a system where [Shifter](https://github.com/NERSC/shifter) is installed.
