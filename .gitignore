@@ -1,8 +1,9 @@
 extra_no_github
-step*/SRR6166481_*
-step*/solutions/SRR6166481_*
-step*/Fago*
-step*/solutions/Fago*
-step*/out_velvet
-step*/solutions/out_velvet
-step*/TEST*
+episode*/weather
+episode*/SRR6166481_*
+episode*/solutions/SRR6166481_*
+episode*/Fago*
+episode*/solutions/Fago*
+episode*/out_velvet
+episode*/solutions/out_velvet
+episode*/TEST*
