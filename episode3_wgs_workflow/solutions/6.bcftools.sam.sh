@@ -8,8 +8,15 @@ docker run $run_flags $samtools_cont samtools sort -o SRR6166481_sub_sorted.bam 
 
 docker run $run_flags $samtools_cont samtools index SRR6166481_sub_sorted.bam
 
+# note the use of pipes in the following
 docker run    $run_flags $samtools_cont samtools mpileup -uf Fagopyrum_esculentum.fasta SRR6166481_sub_sorted.bam | \
 docker run -i $run_flags $bcftools_cont bcftools call -o SRR6166481_sub_var_raw.bcf -Ob -v -c -
 
 docker run    $run_flags $bcftools_cont bcftools view SRR6166481_sub_var_raw.bcf | \
 docker run -i $run_flags $bcftools_cont vcfutils.pl varFilter -D 100 >SRR6166481_sub_var_flt.vcf
+
+# alternative way: no pipes
+#docker run $run_flags $samtools_cont samtools mpileup -o SRR6166481_sub_mpiledup.bcf -uf Fagopyrum_esculentum.fasta SRR6166481_sub_sorted.bam
+#docker run $run_flags $bcftools_cont bcftools call -o SRR6166481_sub_var_raw.vcf -Ov -v -c SRR6166481_sub_mpiledup.bcf
+#docker run $run_flags $bcftools_cont vcfutils.pl varFilter -D 100 SRR6166481_sub_var_raw.vcf >SRR6166481_sub_var_flt.vcf
+
