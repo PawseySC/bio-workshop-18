@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageAnalysis xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Run Name="Intensities">
+    <Cycles First="1" Last="132" Number="132" />
+    <ImageParameters>
+      <AutoOffsetFlag>0</AutoOffsetFlag>
+      <AutoSizeFlag>0</AutoSizeFlag>
+      <Fwhm>0</Fwhm>
+      <RemappingDistance>0</RemappingDistance>
+      <Threshold>0</Threshold>
+    </ImageParameters>
+    <RunParameters>
+      <AutoCycleFlag>0</AutoCycleFlag>
+      <BasecallFlag>0</BasecallFlag>
+      <Deblocked>0</Deblocked>
+      <DebugFlag>0</DebugFlag>
+      <FirstRunOnlyFlag>0</FirstRunOnlyFlag>
+      <ImagingReads Index="1">
+        <FirstCycle>1</FirstCycle>
+        <LastCycle>26</LastCycle>
+        <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      </ImagingReads>
+      <ImagingReads Index="2">
+        <FirstCycle>27</FirstCycle>
+        <LastCycle>34</LastCycle>
+        <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      </ImagingReads>
+      <ImagingReads Index="3">
+        <FirstCycle>35</FirstCycle>
+        <LastCycle>132</LastCycle>
+        <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      </ImagingReads>
+      <Instrument>HISEQ02</Instrument>
+      <IterativeMatrixFlag>0</IterativeMatrixFlag>
+      <MakeFlag>0</MakeFlag>
+      <MaxCycle>0</MaxCycle>
+      <MinCycle>0</MinCycle>
+      <Reads Index="1">
+        <FirstCycle>1</FirstCycle>
+        <LastCycle>26</LastCycle>
+        <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      </Reads>
+      <Reads Index="2">
+        <FirstCycle>27</FirstCycle>
+        <LastCycle>34</LastCycle>
+        <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      </Reads>
+      <Reads Index="3">
+        <FirstCycle>35</FirstCycle>
+        <LastCycle>132</LastCycle>
+        <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      </Reads>
+      <RunFolder>161020_D00547_0905_BH35KCBCXY</RunFolder>
+      <RunFolderDate>161020</RunFolderDate>
+      <RunFolderId>0905</RunFolderId>
+      <RunFlowcellId>H35KCBCXY</RunFlowcellId>
+      <Barcode>
+        <Cycle Use="true">27</Cycle>
+        <Cycle Use="true">28</Cycle>
+        <Cycle Use="true">29</Cycle>
+        <Cycle Use="true">30</Cycle>
+        <Cycle Use="true">31</Cycle>
+        <Cycle Use="true">32</Cycle>
+        <Cycle Use="true">33</Cycle>
+        <Cycle Use="true">34</Cycle>
+      </Barcode>
+      <QTableVersion>V8</QTableVersion>
+    </RunParameters>
+    <Software Name="RTA" Version="1.18.66.4" />
+    <TileSelection>
+      <Lane Index="1">
+        <Sample>s</Sample>
+        <Tile>1101</Tile>
+        <Tile>1108</Tile>
+        <Tile>1102</Tile>
+        <Tile>1103</Tile>
+        <Tile>1105</Tile>
+        <Tile>1104</Tile>
+        <Tile>1106</Tile>
+        <Tile>1107</Tile>
+        <Tile>1109</Tile>
+        <Tile>1111</Tile>
+        <Tile>1110</Tile>
+        <Tile>1115</Tile>
+        <Tile>1114</Tile>
+        <Tile>1113</Tile>
+        <Tile>1116</Tile>
+        <Tile>1112</Tile>
+        <Tile>1202</Tile>
+        <Tile>1203</Tile>
+        <Tile>1201</Tile>
+        <Tile>1205</Tile>
+        <Tile>1207</Tile>
+        <Tile>1204</Tile>
+        <Tile>1206</Tile>
+        <Tile>1208</Tile>
+        <Tile>1210</Tile>
+        <Tile>1209</Tile>
+        <Tile>1211</Tile>
+        <Tile>1213</Tile>
+        <Tile>1215</Tile>
+        <Tile>1216</Tile>
+        <Tile>2102</Tile>
+        <Tile>2101</Tile>
+        <Tile>1212</Tile>
+        <Tile>1214</Tile>
+        <Tile>2109</Tile>
+        <Tile>2103</Tile>
+        <Tile>2110</Tile>
+        <Tile>2105</Tile>
+        <Tile>2111</Tile>
+        <Tile>2202</Tile>
+        <Tile>2201</Tile>
+        <Tile>2107</Tile>
+        <Tile>2106</Tile>
+        <Tile>2113</Tile>
+        <Tile>2108</Tile>
+        <Tile>2104</Tile>
+        <Tile>2203</Tile>
+        <Tile>2115</Tile>
+        <Tile>2209</Tile>
+        <Tile>2116</Tile>
+        <Tile>2114</Tile>
+        <Tile>2112</Tile>
+        <Tile>2210</Tile>
+        <Tile>2205</Tile>
+        <Tile>2211</Tile>
+        <Tile>2213</Tile>
+        <Tile>2208</Tile>
+        <Tile>2207</Tile>
+        <Tile>2206</Tile>
+        <Tile>2204</Tile>
+        <Tile>2214</Tile>
+        <Tile>2216</Tile>
+        <Tile>2215</Tile>
+        <Tile>2212</Tile>
+      </Lane>
+      <Lane Index="2">
+        <Sample>s</Sample>
+        <Tile>1101</Tile>
+        <Tile>1102</Tile>
+        <Tile>1103</Tile>
+        <Tile>1109</Tile>
+        <Tile>1105</Tile>
+        <Tile>1110</Tile>
+        <Tile>1201</Tile>
+        <Tile>1111</Tile>
+        <Tile>1113</Tile>
+        <Tile>1202</Tile>
+        <Tile>1108</Tile>
+        <Tile>1106</Tile>
+        <Tile>1209</Tile>
+        <Tile>1107</Tile>
+        <Tile>1203</Tile>
+        <Tile>1104</Tile>
+        <Tile>1210</Tile>
+        <Tile>1205</Tile>
+        <Tile>1116</Tile>
+        <Tile>1114</Tile>
+        <Tile>1115</Tile>
+        <Tile>1211</Tile>
+        <Tile>2101</Tile>
+        <Tile>1112</Tile>
+        <Tile>1213</Tile>
+        <Tile>2102</Tile>
+        <Tile>1208</Tile>
+        <Tile>2109</Tile>
+        <Tile>1206</Tile>
+        <Tile>2103</Tile>
+        <Tile>1207</Tile>
+        <Tile>1204</Tile>
+        <Tile>2105</Tile>
+        <Tile>2110</Tile>
+        <Tile>2111</Tile>
+        <Tile>1216</Tile>
+        <Tile>1214</Tile>
+        <Tile>2201</Tile>
+        <Tile>1215</Tile>
+        <Tile>1212</Tile>
+        <Tile>2113</Tile>
+        <Tile>2202</Tile>
+        <Tile>2209</Tile>
+        <Tile>2203</Tile>
+        <Tile>2106</Tile>
+        <Tile>2108</Tile>
+        <Tile>2107</Tile>
+        <Tile>2104</Tile>
+        <Tile>2205</Tile>
+        <Tile>2211</Tile>
+        <Tile>2210</Tile>
+        <Tile>2116</Tile>
+        <Tile>2114</Tile>
+        <Tile>2115</Tile>
+        <Tile>2112</Tile>
+        <Tile>2213</Tile>
+        <Tile>2206</Tile>
+        <Tile>2207</Tile>
+        <Tile>2204</Tile>
+        <Tile>2208</Tile>
+        <Tile>2215</Tile>
+        <Tile>2214</Tile>
+        <Tile>2212</Tile>
+        <Tile>2216</Tile>
+      </Lane>
+    </TileSelection>
+    <Time />
+    <User />
+  </Run>
+</ImageAnalysis>
