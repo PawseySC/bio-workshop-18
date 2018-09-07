@@ -1,7 +1,7 @@
 #!/bin/bash
 
-velvet_cont=quay.io/biocontainers/velvet:1.2.10--1
-run_flags="--rm -v $(pwd):/data -w /data"
+velvet_cont=
+run_flags=
 
 # container commands here
 #
