@@ -2,7 +2,7 @@
 
 Part of [Pawsey COMBINE Bioinformatics Symposium 2018](https://www.pawsey.org.au/bio-symposium) - 6-7 Sep 2018
 
-[Workshop Home](https://github.com/PawseySC/bio-workshop-18)
+[Workshop GitHub Home](https://github.com/PawseySC/bio-workshop-18)
 
 ### Table of Contents
 1. [Introduction to Docker, repos, containers](https://github.com/PawseySC/bio-workshop-18/blob/master/1.containers.md)
