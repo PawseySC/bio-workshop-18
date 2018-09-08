@@ -2,7 +2,4 @@
 
 module load shifter
 
-ubuntu_cont=ubuntu
-
-
-shifter run $ubuntu_cont 
+shifter run ubuntu
