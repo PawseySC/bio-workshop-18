@@ -1,8 +1,7 @@
-## GitHub Repo for the Pawsey COMBINE Bioinformatics Symposium 2018
+## GitHub Repo for the [Pawsey COMBINE Bioinformatics Symposium 2018](https://www.pawsey.org.au/bio-symposium) - Hands-on workshop 7 Sep 2018
 
-Hands-on Workshop 7th September 2018
-Session on Containers for Bioinformatics
+[GitHub Home](https://github.com/PawseySC/bio-workshop-18) for the session on Containers for Bioinformatics
 
-[Event page](https://www.pawsey.org.au/bio-symposium)
-
-[GitHub](https://github.com/PawseySC/bio-workshop-18)
+Note on versions:
+- Fixes and improvements are being commited to this repo
+- The older version used during the event corresponds to this [GitHub Release](https://github.com/PawseySC/bio-workshop-18/releases/tag/7Sep18)
