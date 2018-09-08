@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1. Quality control - FastQC
 cp -p ../data_files/SRR6166481_sub_[12].fastq .
 #
@@ -6,7 +8,7 @@ fastqc -o . SRR6166481_sub_2.fastq.gz
 
 
 # 2. Cleaning - Trimmomatic
-java -jar ${PATH_TO_TRIMMOMATIC_JAR}/trimmomatic.jar \
+java -jar <path-to-trimmomatic-jar>/trimmomatic.jar \
 	PE SRR6166481_sub_1.fastq.gz SRR6166481_sub_2.fastq.gz \
 	SRR6166481_sub_1_paired.fastq.gz SRR6166481_sub_1_unpaired.fastq.gz \
 	SRR6166481_sub_2_paired.fastq.gz SRR6166481_sub_2_unpaired.fastq.gz \
@@ -33,7 +35,7 @@ cp -p out_velvet/contigs.fa SRR6166481_sub_contigs.fa
 mummer -b Fagopyrum_esculentum.fasta SRR6166481_sub_contigs.fa >SRR6166481_sub_mummer.out
 mummerplot -png -p SRR6166481_sub_mummer SRR6166481_sub_mummer.out   # plotting
 #
-gnuplot SRR6166481_sub_mummer.gp
+gnuplot SRR6166481_sub_mummer.gp   # requires gnuplot installed
 
 
 # 6. SNP Calling - Samtools + Bcftools
