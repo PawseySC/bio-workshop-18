@@ -1,6 +1,3 @@
 #!/bin/bash
 
-ubuntu_cont=ubuntu
-run_flags="--rm"
-
-docker run $run_flags $ubuntu_cont echo "Hello World"
+docker run ubuntu echo "Hello World"
