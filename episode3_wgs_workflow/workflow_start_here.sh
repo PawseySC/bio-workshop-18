@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. Quality control - FastQC
-cp -p ../data_files/SRR6166481_sub_[12].fastq .
+cp -p ../data_files/SRR6166481_sub_[12].fastq.gz .
 #
 fastqc -o . SRR6166481_sub_1.fastq.gz
 fastqc -o . SRR6166481_sub_2.fastq.gz
