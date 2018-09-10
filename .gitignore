@@ -5,7 +5,8 @@ Extra_no_github
 episode1*/weather
 episode4*/slurm*
 episode*/SRR6166481_*
-episode3/Fago*
+episode3*/Fago*
 episode3*/out_velvet
 episode3*/TEST*
 episode3*/testbis*
+episode3*/data_files
