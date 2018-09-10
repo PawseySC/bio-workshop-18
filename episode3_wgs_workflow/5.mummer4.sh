@@ -1,11 +1,8 @@
 #!/bin/bash
+run_flags="--rm -v $(pwd):/data -w /data"
 
-mummer4_cont=
-run_flags=
+mummer -b Fagopyrum_esculentum.fasta SRR6166481_sub_contigs.fa >SRR6166481_sub_mummer.out
 
-# container commands here
-#
+mummerplot -png -p SRR6166481_sub_mummer SRR6166481_sub_mummer.out
 
-# assuming gnuplot is installed in the machine. if not, the following will fail and no image file will be created by mummer
-# you can install gnuplot on Ubuntu using "sudo apt-get install gnuplot"
 gnuplot SRR6166481_sub_mummer.gp
