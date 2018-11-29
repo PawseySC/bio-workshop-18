@@ -1,6 +1,6 @@
 ## Hands-on workshop on Containers for Bioinformatics
 
-Part of [Pawsey COMBINE Bioinformatics Symposium 2018](https://www.pawsey.org.au/bio-symposium) - 6-7 Sep 2018
+First run as part of [Pawsey COMBINE Bioinformatics Symposium 2018](https://www.pawsey.org.au/bio-symposium) - 6-7 Sep 2018
 
 [Workshop GitHub Home](https://github.com/PawseySC/bio-workshop-18)
 
@@ -21,4 +21,4 @@ access is required to a system where [Shifter](https://github.com/NERSC/shifter)
 
 ### Note on versions:
 - Fixes and improvements are being commited to this repo
-- The older version used during the event corresponds to this [GitHub Release](https://github.com/PawseySC/bio-workshop-18/releases/tag/7Sep18)
+- The older version used during the first event corresponds to this [GitHub Release](https://github.com/PawseySC/bio-workshop-18/releases/tag/7Sep18)
