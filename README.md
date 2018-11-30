@@ -9,7 +9,7 @@
 4. [Containerising a WGS workflow](https://github.com/PawseySC/bio-workshop-18/blob/master/4.wgs_workflow.md)
 5. [Porting to HPC systems](https://github.com/PawseySC/bio-workshop-18/blob/master/5.hpc.md)
 6. [Building and running a Cellranger container](https://github.com/PawseySC/bio-workshop-18/blob/master/6.cellranger.md)
-7. [Building a basic RStudio image](https://github.com/PawseySC/bio-workshop-18/blob/master/7.rstudio_build.md)
+7. [Building a basic RStudio image](https://github.com/PawseySC/bio-workshop-18/blob/master/7.rstudio.md)
 
 ### Requirements
 - A computer with a Unix-like terminal and [Docker](https://www.docker.com) installed;
