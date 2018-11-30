@@ -9,7 +9,7 @@ First run as part of [Pawsey COMBINE Bioinformatics Symposium 2018](https://www.
 2. [Our first bioinformatics container](https://github.com/PawseySC/bio-workshop-18/blob/master/2.fastqc.md)
 3. [Containerising a WGS workflow](https://github.com/PawseySC/bio-workshop-18/blob/master/3.wgs_workflow.md)
 4. [Porting to HPC systems](https://github.com/PawseySC/bio-workshop-18/blob/master/4.hpc.md)
-5. [BLASTing from a container](https://github.com/PawseySC/bio-workshop-18/blob/master/5.blast.md)
+5. [Running BLAST from a container](https://github.com/PawseySC/bio-workshop-18/blob/master/5.blast.md)
 6. [Building and running a Cellranger container](https://github.com/PawseySC/bio-workshop-18/blob/master/6.cellranger.md)
 7. [Building a basic RStudio image](https://github.com/PawseySC/bio-workshop-18/blob/master/7.rstudio_build.md)
 
