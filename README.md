@@ -14,7 +14,6 @@
 ### Requirements
 - A computer with a Unix-like terminal and [Docker](https://www.docker.com) installed;
 creation of a free account might be required to Download Docker.
-- A free account on [QUAY Hub](https://quay.io) to downlad some of the containers;
 - Some knowledge of Unix-like terminals is recommended, including basic commands and text editors;
 a good resource can be https://pawseysc.github.com/shell-hpc.
 - To optionally test the scripts in Episode 5 (HPC porting),
