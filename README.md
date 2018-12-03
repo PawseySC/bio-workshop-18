@@ -19,7 +19,7 @@ a good learning resource can be [The Unix Shell: Pawsey Edition](https://pawseys
 - To optionally test the scripts in Episode 5 (HPC porting),
 access is required to a system where [Shifter](https://github.com/NERSC/shifter) is installed.
 
-### Release notes
-- Fixes and improvements are being commited to this repo
-- The [7Sep18](https://github.com/PawseySC/bio-workshop-18/releases/tag/7Sep18) release has been used during the 
-[Pawsey COMBINE Bioinformatics Symposium 2018](https://pawsey.org.au/event/bioinformatics-symposium-2018/) - 6-7 Sep 2018
+### Releases
+- Fixes and improvements are being commited to the *master* branch of this repo
+- [7Sep18](https://github.com/PawseySC/bio-workshop-18/releases/tag/7Sep18) : Pawsey COMBINE Bioinformatics Symposium 2018, 6-7 Sep 2018
+- [3Dec18](https://github.com/PawseySC/bio-workshop-18/releases/tag/3Dec18) : AMSI BioInfoSummer 2018, 3-7 Dec 2018
