@@ -15,11 +15,11 @@
 - A computer with a Unix-like terminal and [Docker](https://www.docker.com) installed;
 creation of a free account might be required to Download Docker.
 - Some knowledge of Unix-like terminals is recommended, including basic commands and text editors;
-a good learning resource can be [The Unix Shell: Pawsey Edition](https://pawseysc.github.com/shell-hpc).
+a good learning resource can be [The Unix Shell: Pawsey Edition](https://pawseysc.github.io/shell-hpc).
 - To optionally test the scripts in Episode 5 (HPC porting),
 access is required to a system where [Shifter](https://github.com/NERSC/shifter) is installed.
 
 ### Release notes
 - Fixes and improvements are being commited to this repo
 - The [7Sep18](https://github.com/PawseySC/bio-workshop-18/releases/tag/7Sep18) release has been used during the 
-[Pawsey COMBINE Bioinformatics Symposium 2018](https://www.pawsey.org.au/bio-symposium) - 6-7 Sep 2018
+[Pawsey COMBINE Bioinformatics Symposium 2018](https://pawsey.org.au/event/bioinformatics-symposium-2018/) - 6-7 Sep 2018
