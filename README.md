@@ -3,13 +3,13 @@
 Workshop GitHub Home: https://github.com/PawseySC/bio-workshop-18
 
 ### Table of Contents
-1. [BLASTing from a container](https://github.com/PawseySC/bio-workshop-18/blob/master/1.blast.md)
-2. [Introducing Docker, repos, containers](https://github.com/PawseySC/bio-workshop-18/blob/master/2.containers.md)
-3. [Exploring a bioinformatics container](https://github.com/PawseySC/bio-workshop-18/blob/master/3.fastqc.md)
-4. [Containerising a WGS workflow](https://github.com/PawseySC/bio-workshop-18/blob/master/4.wgs_workflow.md)
-5. [Porting to HPC systems](https://github.com/PawseySC/bio-workshop-18/blob/master/5.hpc.md)
-6. [Building and running a Cellranger container](https://github.com/PawseySC/bio-workshop-18/blob/master/6.cellranger.md)
-7. [Building a basic RStudio image](https://github.com/PawseySC/bio-workshop-18/blob/master/7.rstudio.md)
+1. [BLASTing from a container](1.blast.md)
+2. [Introducing Docker, repos, containers](2.containers.md)
+3. [Exploring a bioinformatics container](3.fastqc.md)
+4. [Containerising a WGS workflow](4.wgs_workflow.md)
+5. [Porting to HPC systems](5.hpc.md)
+6. [Building and running a Cellranger container](6.cellranger.md)
+7. [Building a basic RStudio image](7.rstudio.md)
 
 ### Requirements
 - A computer with a Unix-like terminal and [Docker](https://www.docker.com) installed;
