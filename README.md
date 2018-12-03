@@ -1,6 +1,6 @@
 ## Hands-on workshop on Containers for Bioinformatics
 
-Workshop GitHub Home: https://github.com/PawseySC/bio-workshop-18/blob/master/README.md
+Workshop GitHub Home: https://github.com/PawseySC/bio-workshop-18
 
 ### Table of Contents
 1. [BLASTing from a container](https://github.com/PawseySC/bio-workshop-18/blob/master/1.blast.md)
